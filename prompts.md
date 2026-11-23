@@ -2,332 +2,117 @@
 
 ## 1. Development Method
 
-I developed the Aura Salon Queue Management System with the assistance of ChatGPT.
+I used ChatGPT to generate the initial Aura Salon Queue Management System as a complete downloadable ZIP project. I then extracted the files, opened the project in Visual Studio Code, configured Supabase, tested the features, and deployed it using GitHub and Vercel. I used ChatGPT for step-by-step help during setup and troubleshooting.
 
-I provided the project requirements to ChatGPT and requested a complete application. ChatGPT generated the project files, which I downloaded as a ZIP file.
+## 2. Prompt History
 
-After extracting the ZIP, I opened the project in Visual Studio Code and used ChatGPT for step-by-step guidance to install dependencies, run the application, configure the database, deploy the website, test its features, and prepare the final submission.
+**Accuracy note:** The prompts below are **reconstructed examples** based on the work I completed, not verbatim transcripts. The original project-generation message and any exact follow-up messages should be copied from ChatGPT history if a verbatim log is required. The activities and results describe my project workflow.
 
-I did not use the 12 suggested development prompts from the original template as separate prompts. The initial application was generated as a complete project.
+### Prompt 1 — Generate the Complete Project (Reconstructed)
 
-## 2. Original Project Generation
+> Create a complete Aura Salon Queue Management System web application for a salon. Use React and Vite. Include a customer home page, online queue joining, token and waiting status, a reception dashboard, a barber dashboard, a TV queue display, and owner settings. Support English and Gujarati labels. Allow customers to select services and a barber preference. Provide realistic queue rules, responsive layouts, sample data, tests, documentation, and instructions for using Supabase for shared queue updates and deploying the project. Give me the full project as a downloadable ZIP file.
 
-**Tool used:** ChatGPT
+**Outcome:** ChatGPT generated the application files in a ZIP archive, which I downloaded and extracted.
 
-**Purpose:** Generate a complete salon queue management application.
+### Prompt 2 — Run the Downloaded Project (Reconstructed)
 
-**Original prompt:** The exact original project-generation prompt must be copied from my ChatGPT conversation history.
+> I downloaded and extracted the Aura Salon project ZIP. Help me open the correct folder in VS Code, install the dependencies, and run it locally. Give me the terminal commands one step at a time.
 
-**Result:**
+**Outcome:** Opened the project, ran `npm install` and `npm run dev`, and tested the local website.
 
-ChatGPT generated a React + Vite application containing:
+### Prompt 3 — Test Customer Features (Reconstructed)
 
-- Home page
-- Join Queue page
-- My Status page
-- Reception dashboard
-- Barber dashboard
-- TV Display
-- Owner/Admin settings
-- English and Gujarati language support
-- Queue management rules
-- Supabase integration
-- Deployment instructions
-- Project documentation
+> Help me test the customer flow: join a queue, choose services and a barber, generate a token, and check queue position and estimated waiting time. Tell me what to verify.
 
-I downloaded the generated project as a ZIP file and extracted it on my laptop.
+**Outcome:** Tested queue joining and customer status with demo entries.
 
-## 3. Development and Setup Activities
+### Prompt 4 — Test Staff and Owner Features (Reconstructed)
 
-The following sections document the main activities I completed with ChatGPT assistance. They are activity summaries rather than exact quotations of my prompts.
+> Guide me through testing the reception, barber, TV display, and owner pages. I want to check calling customers, starting and completing services, toggling services, and opening or closing online joining.
 
-### Step 1 — Project Setup
+**Outcome:** Tested the major staff workflows and owner controls with the demo PIN `2468`.
 
-**Task:** Set up and run the downloaded project.
+### Prompt 5 — Configure Supabase (Reconstructed)
 
-**Activities completed:**
+> I want queue updates to be shared across browser sessions instead of staying only in one browser. Help me configure Supabase, use the SQL schema, set the project URL and publishable key, and verify live synchronization.
 
-- Extracted the project ZIP file.
-- Opened the project folder in Visual Studio Code.
-- Checked Node.js and npm installation.
-- Installed the required packages using `npm install`.
-- Started the development server using `npm run dev`.
-- Opened the application at `http://localhost:5173/`.
+**Outcome:** Configured Supabase and checked queue synchronization across sessions.
 
-**Result:** The application ran successfully on my laptop.
+### Prompt 6 — Set Up Git (Reconstructed)
 
-### Step 2 — Customer Queue Testing
+> Help me install Git on Windows, open the correct project folder, initialize the repository, stage the project files, and create my first commit. Explain errors one step at a time.
 
-**Task:** Test customer registration and token generation.
+**Outcome:** Installed and configured Git, corrected a repository-folder mistake, set author details, and committed the project.
 
-**Activities completed:**
+### Prompt 7 — Upload to GitHub (Reconstructed)
 
-- Opened the Home page.
-- Navigated to Join Queue.
-- Entered sample customer details.
-- Selected salon services.
-- Selected a barber preference.
-- Confirmed the queue registration.
-- Checked the generated token.
-- Verified queue position and estimated waiting time.
+> I have created a GitHub repository for the salon queue project. Guide me through connecting my local project to the repository and pushing the `main` branch.
 
-**Result:** The customer registration and token status features worked.
+**Outcome:** Uploaded the project to GitHub and completed browser authentication.
 
-### Step 3 — Reception Dashboard Testing
+### Prompt 8 — Deploy on Vercel (Reconstructed)
 
-**Task:** Test the receptionist's queue management features.
+> Help me deploy my GitHub React/Vite project on Vercel. Show me how to import the repository, set the Supabase environment variables, deploy, and open the live website.
 
-**Activities completed:**
+**Outcome:** Deployed the application successfully.
 
-- Opened the Reception dashboard.
-- Used the demo PIN `2468`.
-- Checked the waiting list.
-- Tested calling the next customer.
-- Reviewed customer and barber information.
-- Checked queue status updates.
+### Prompt 9 — Verify the Live Website (Reconstructed)
 
-**Result:** Reception could manage the customer queue.
+> Help me test the deployed Aura Salon website. I want to verify customer registration, token status, reception, barber actions, TV display, owner settings, English/Gujarati labels, and shared queue updates.
 
-### Step 4 — Barber Dashboard Testing
+**Outcome:** Tested the main live workflows, including cross-session queue updates.
 
-**Task:** Test barber operations.
+### Prompt 10 — Prepare Submission Documentation (Reconstructed)
 
-**Activities completed:**
+> Help me update the README and submission checklist with my real GitHub and Vercel links, write a reflection based on what I actually did, and prepare a prompt log for the project.
 
-- Opened the Barber dashboard.
-- Selected a barber station.
-- Checked the current customer.
-- Started a service.
-- Marked a service as completed.
-- Checked barber availability and break controls.
+**Outcome:** Updated `README.md`, `SUBMISSION_CHECKLIST.md`, `REFLECTION.md`, and `prompts.md`.
 
-**Result:** The barber dashboard supported service progress and completion.
+### Prompt 11 — Check GitHub Security (Reconstructed)
 
-### Step 5 — TV Display Testing
+> Help me check which files are tracked by Git and whether I accidentally committed `.env.local`, secret keys, or real customer data. Give me commands I can run in VS Code.
 
-**Task:** Verify the salon waiting-area display.
+**Outcome:** Verified `.env.local` was not tracked; a keyword search found documentation warnings rather than exposed service-role keys; checked that the seed data used fictional examples. These checks do not constitute a complete security audit.
 
-**Activities completed:**
+### Prompt 12 — Push Final Documentation Changes (Reconstructed)
 
-- Opened the TV Display.
-- Checked current barber stations.
-- Checked upcoming customer tokens.
-- Verified the display layout.
+> I changed my reflection, prompt log, and submission checklist in VS Code. Help me check Git status, stage only these files, commit them, and push the updates to GitHub.
 
-**Result:** The TV Display showed salon queue information.
+**Outcome:** Committed and pushed the documentation updates.
 
-### Step 6 — Owner Settings Testing
+## 3. Errors and Troubleshooting
 
-**Task:** Test owner administration features.
+| Issue | How I addressed it |
+|---|---|
+| `git` not recognized | Installed Git for Windows and checked `git --version`. |
+| Git repository initialized in the wrong folder | Navigated to `salon-queue-project` and corrected the repository setup. |
+| Incorrect `git --short` command | Used `git status --short` instead. |
+| `Author identity unknown` | Configured Git username and email before committing. |
+| `fatal: not a git repository` from parent folder | Ran `cd salon-queue-project` before Git commands. |
+| Need for shared queue updates | Configured Supabase and tested across browser sessions. |
+| Documentation changed only locally | Staged, committed, and pushed the updated Markdown files. |
 
-**Activities completed:**
+## 4. Technologies and Tools
 
-- Opened the Owner/Admin dashboard.
-- Checked salon services.
-- Tested enabling and disabling services.
-- Tested opening and closing online queue joining.
-- Checked English and Gujarati labels.
+- **ChatGPT:** Generated the initial application and provided setup, testing, and troubleshooting guidance.
+- **Visual Studio Code:** Edited and ran the project.
+- **React, Vite, JavaScript, CSS:** Application frontend.
+- **Supabase:** Shared queue data.
+- **Git and GitHub:** Version control and source hosting.
+- **Vercel:** Public deployment.
+- **Browser:** Local and live testing.
 
-**Result:** Owner controls and bilingual labels worked during testing.
+## 5. Project Links
 
-### Step 7 — Supabase Configuration
+- **GitHub profile:** https://github.com/siddharthmeghani
+- **GitHub repository:** https://github.com/siddharthmeghani/salon-queue-management
+- **Live website:** https://salon-queue-management-mu.vercel.app
+- **Staff demo PIN:** `2468`
 
-**Task:** Configure shared queue data.
+## 6. Reflection on AI Use
 
-**Activities completed:**
+ChatGPT helped me produce the starting project quickly, but I still needed to run it, configure services, solve setup problems, test different roles, and publish it. The most useful part of the process was following one troubleshooting step at a time and verifying the result before moving on. I learned how a locally running application becomes a deployed project with a GitHub repository, environment configuration, and a shared database.
 
-- Created or configured a Supabase project.
-- Used the provided database setup.
-- Configured the Supabase project URL.
-- Configured the Supabase publishable key.
-- Connected the hosted application to Supabase.
-- Checked shared queue updates across browser sessions.
+## 7. Submission Integrity Note
 
-**Result:** The deployed application displayed live synchronization as enabled, and shared queue updates were tested.
-
-**Security note:** Only the Supabase publishable key is used in the frontend. Service-role or secret keys must not be committed to the repository.
-
-### Step 8 — Git Installation and Configuration
-
-**Task:** Prepare the project for GitHub.
-
-**Activities completed:**
-
-- Installed Git on Windows.
-- Checked the installation using `git --version`.
-- Initialized Git inside the correct project folder.
-- Staged project files using `git add .`.
-- Checked the staged files using `git status --short`.
-- Configured Git author details after encountering an identity error.
-- Created the initial Git commit.
-
-**Result:** The local Git repository was successfully created.
-
-### Step 9 — GitHub Repository Setup
-
-**Task:** Upload the application source code to GitHub.
-
-**Activities completed:**
-
-- Created a GitHub repository.
-- Connected the local project to the remote repository.
-- Pushed the project to the `main` branch.
-- Completed GitHub authentication.
-- Verified the repository files online.
-
-**GitHub repository:**
-
-https://github.com/siddharthmeghani/salon-queue-management
-
-**Result:** The project source code was successfully uploaded to GitHub.
-
-### Step 10 — Vercel Deployment
-
-**Task:** Deploy the application publicly.
-
-**Activities completed:**
-
-- Opened Vercel.
-- Connected the GitHub account.
-- Imported the salon queue management repository.
-- Selected the Vite application preset.
-- Configured the Supabase environment variables.
-- Deployed the project.
-- Opened the deployed website.
-
-**Live application:**
-
-https://salon-queue-management-mu.vercel.app
-
-**Result:** The application was successfully deployed to production.
-
-### Step 11 — Live Application Testing
-
-**Task:** Verify the deployed website.
-
-**Activities completed:**
-
-- Opened the live application in a browser.
-- Tested customer queue registration.
-- Verified token generation and waiting status.
-- Checked the Reception dashboard.
-- Checked the Barber dashboard.
-- Checked the TV Display.
-- Tested Owner settings.
-- Tested English and Gujarati labels.
-- Checked shared queue updates across browser sessions.
-
-**Result:** The main application workflows were tested on the deployed website.
-
-### Step 12 — README and Submission Preparation
-
-**Task:** Prepare the final project documentation.
-
-**Activities completed:**
-
-- Updated `README.md` with the actual Vercel URL.
-- Included the staff demo PIN.
-- Updated `SUBMISSION_CHECKLIST.md`.
-- Reviewed the required source files.
-- Prepared the prompt log.
-- Reviewed the reflection and final submission requirements.
-
-**Result:** The project documentation was prepared for final review.
-
-## 4. Errors and Troubleshooting
-
-During development and deployment, I encountered the following issues.
-
-### Issue 1 — Git Not Recognized
-
-**Error:**
-
-`'git' is not recognized as an internal or external command`
-
-**Resolution:**
-
-Installed Git for Windows, reopened the terminal, and verified the installation.
-
-### Issue 2 — Git Initialized in the Wrong Folder
-
-**Problem:**
-
-Git was initially initialized in the parent folder instead of the application folder.
-
-**Resolution:**
-
-Removed the incorrect `.git` directory, navigated into `salon-queue-project`, and initialized Git again.
-
-### Issue 3 — Incorrect Git Command
-
-**Problem:**
-
-I accidentally entered `git --short`.
-
-**Resolution:**
-
-Used the correct command:
-
-`git status --short`
-
-### Issue 4 — Git Author Identity Unknown
-
-**Error:**
-
-`Author identity unknown`
-
-**Resolution:**
-
-Configured Git user name and email, then successfully committed the project files.
-
-### Issue 5 — Shared Queue State Verification
-
-**Problem:**
-
-I needed to verify whether queue updates were visible across different browser sessions.
-
-**Resolution:**
-
-Configured Supabase for shared queue data and tested the deployed application across browser sessions.
-
-## 5. Technologies and Tools Used
-
-- ChatGPT — AI-assisted project generation and development guidance
-- Visual Studio Code — Code editing and project setup
-- React — User interface development
-- Vite — Development server and production build
-- JavaScript — Application functionality
-- CSS — Responsive styling
-- Supabase — Shared database and live queue state
-- Git — Version control
-- GitHub — Source code hosting
-- Vercel — Website deployment
-- Google Chrome — Application testing
-
-## 6. Final Project Links
-
-**Project:** Aura Salon Queue Management System
-
-**GitHub profile:**
-
-https://github.com/siddharthmeghani
-
-**GitHub repository:**
-
-https://github.com/siddharthmeghani/salon-queue-management
-
-**Live website:**
-
-https://salon-queue-management-mu.vercel.app
-
-**Staff demo PIN:** `2468`
-
-## 7. Final Notes
-
-ChatGPT was used to generate the initial application and provide technical guidance throughout setup, testing, and deployment.
-
-I personally performed the project setup, ran terminal commands, configured the external services, tested application screens, created the GitHub repository, deployed the website, and reviewed the submission requirements.
-
-The project was generated as a complete application rather than through the original template's 12 separate development prompts.
-
-For an exact prompt-history submission, the original prompts and follow-up messages from my ChatGPT conversation history must also be included in chronological order, including unsuccessful attempts.
+This file records the workflow and **reconstructed prompt examples**. It does not claim these examples are exact historical messages. If the assignment requires every prompt actually entered, the reconstructed examples must be replaced or supplemented with the original conversation text in chronological order, including failed attempts and follow-up questions.
