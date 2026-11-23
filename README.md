@@ -1,10 +1,10 @@
 # Aura Salon Queue Management System
 
-**Live demo:** https://REPLACE-WITH-YOUR-VERCEL-URL.vercel.app  
+**Live demo:** https://salon-queue-management-mu.vercel.app
 **Staff demo PIN:** `2468` (for `/reception`, `/barber`, and `/admin`)  
 **Hosted on:** Vercel (frontend) + Supabase (shared live queue state)
 
-> Before submission, replace the placeholder URL above with your actual public Vercel deployment and open it on a phone to verify it works. A placeholder is not a valid live link.
+
 
 ## About
 Aura Salon is a mobile-first queue management application for a salon. Customers can join the queue remotely, choose services and a preferred barber, and track their token. Reception can add walk-ins and manage the queue; barbers can start and finish services; a waiting-area display shows current and upcoming tokens; owners can manage services, staff availability and online joining.
