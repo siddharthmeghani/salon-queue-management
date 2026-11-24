@@ -8,11 +8,24 @@ I used ChatGPT to generate the initial Aura Salon Queue Management System as a c
 
 **Accuracy note:** The prompts below are **reconstructed examples** based on the work I completed, not verbatim transcripts. The original project-generation message and any exact follow-up messages should be copied from ChatGPT history if a verbatim log is required. The activities and results describe my project workflow.
 
-### Prompt 1 — Generate the Complete Project (Reconstructed)
+### Prompt 1 — Original Project Generation
 
-> Create a complete Aura Salon Queue Management System web application for a salon. Use React and Vite. Include a customer home page, online queue joining, token and waiting status, a reception dashboard, a barber dashboard, a TV queue display, and owner settings. Support English and Gujarati labels. Allow customers to select services and a barber preference. Provide realistic queue rules, responsive layouts, sample data, tests, documentation, and instructions for using Supabase for shared queue updates and deploying the project. Give me the full project as a downloadable ZIP file.
+**Actual prompt:**
 
-**Outcome:** ChatGPT generated the application files in a ZIP archive, which I downloaded and extracted.
+Develop a Vibe Coding Project for a Salon Queue Management
+as per the attached guide. The application should be deployed.
+Refer to the attached guide for requirements and implementation
+details. Before due date I want you guys to submit personal
+GitHub and public repository link, with working live link on
+top of README.md file. these my assignments complete these
+assignment and give me each step how to i deploy it what are
+the necessary file i need to submit.. please generate layout
+of our application aesthetic and pleasant
+
+**Outcome:**
+
+ChatGPT generated the complete Salon Queue Management
+application as a downloadable ZIP file.
 
 ### Prompt 2 — Run the Downloaded Project (Reconstructed)
 
